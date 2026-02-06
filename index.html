@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container" id="input-screen">
+        <h1>Birthday Surprise!</h1>
+        <p>Please enter your name to unlock your gift.</p>
+        <input type="text" id="nameInput" placeholder="Enter your name here..." />
+        <br>
+        <button onclick="startCelebration()">Unlock Gift 🎁</button>
+    </div>
+
+    <div id="celebration-screen">
+        <h1 id="greeting">Happy Birthday!</h1>
+    </div>
+
+    <audio id="bdayAudio" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js'></script><script  src="./script.js"></script>
+</body>
+</html>
